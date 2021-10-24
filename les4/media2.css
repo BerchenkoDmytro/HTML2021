@@ -1,0 +1,29 @@
+/*@media (orientation: landscape) {*/
+/*    .header__title{*/
+/*        display: none;*/
+/*    }*/
+/*    .nav__item a {*/
+/*        color: red;*/
+/*    }*/
+/*}*/
+
+@media screen and (max-width: 412px){
+    .soc-icon{
+        display: none;
+    }
+    .nav__button{
+        display: flex;
+    }
+    .products {
+        padding: 30px;
+    }
+    .about__grid, .products__list {
+        flex-direction: column;
+    }
+.about_card {
+    width: 100%;
+}
+.nav{
+    display: none;
+}
+}
