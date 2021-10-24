@@ -1,0 +1,59 @@
+
+body {
+    margin-left: 0px;
+    margin-top: 0px;
+}
+
+.father {
+    width: 900px;
+    height: 480px;
+    background: black;
+    display: flex;
+    justify-content:space-around;
+    flex-wrap: wrap;
+}
+
+.head {
+    width: 900px;
+    height: 40px;
+    background: gray;
+    margin: 0px;
+
+}
+
+h1 {
+    text-align: center;
+    margin-top: 0px;
+
+}
+
+.task {
+    width: 256px;
+    height: 400px;
+
+
+}
+
+.a {
+    background: yellow;
+}
+
+.b {
+    background: red;
+}
+
+.c {
+    background: green;
+}
+
+.bottom {
+    width: 900px;
+    height: 40px;
+    background: gray;
+    margin-bottom: 0px;
+
+}
+p{
+   margin-top: 10px;
+    text-align: center;
+}

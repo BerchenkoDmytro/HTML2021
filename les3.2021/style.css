@@ -1,0 +1,21 @@
+.xxx{
+    background: gray;
+    width: 1300px;
+    height: 700px;
+    display: flex;
+justify-content: space-evenly;
+}
+.box{width: 300px;
+    height: 200px;
+
+}
+
+.a{
+
+    background: silver;
+}
+
+.b{
+
+    background: cornflowerblue;
+}

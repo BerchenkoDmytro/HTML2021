@@ -1,0 +1,80 @@
+body {
+    margin-left: 0px;
+    margin-top: 0px;
+}
+
+#mother {
+    height: 40px;
+    width: 1044px;
+    background: yellow;
+    margin-bottom: 10px;
+
+    text-align: center;
+}
+
+
+.father {
+    margin-left: 0px;
+    height: 788px;
+    width: 1044px;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    flex-direction: column;
+    align-content: center;
+    column-gap: 10px;
+    row-gap: 10px;
+
+}
+
+
+.a {
+    height: 256px;
+    width: 256px;
+    background: red;
+
+}
+
+.task {
+    height: 788px;
+    width: 236px;
+    background: blue;
+    text-align: left;
+    padding: 10px;
+
+}
+
+#brother {
+    height: 280px;
+    width: 1044px;
+
+    display: flex;
+    flex-wrap: wrap;
+
+
+    align-content: center;
+    column-gap: 10px;
+    row-gap: 10px;
+    justify-content: space-around;
+
+}
+
+.sister {
+    height: 256px;
+    width: 340px;
+    background: red;
+
+
+}
+.zagol{
+    height: 40px;
+    width: 1044px;
+    background: yellow;
+margin-top: 10px;
+    text-align: center;
+
+}
+div{
+   text-align: center;
+}
