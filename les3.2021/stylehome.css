@@ -1,7 +1,7 @@
 
 body {
-    margin-left: 0px;
-    margin-top: 0px;
+    margin-left: 0;
+    margin-top: 0;
 }
 
 .father {
@@ -50,7 +50,7 @@ h1 {
     width: 900px;
     height: 40px;
     background: gray;
-    margin-bottom: 0px;
+    margin-bottom: 0;
 
 }
 p{
