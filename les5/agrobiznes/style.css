@@ -1,0 +1,146 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+    font-family: 'Anton', sans-serif;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.header {
+    height: 100vh;
+width: auto;
+    background: url("image/fcab_back_03.png") no-repeat center/cover;
+
+}
+.header__back{
+    background: url("image/logoback.png") no-repeat center/cover;
+}
+.header__top {
+    padding-top: 35px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.header__logo_name{
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+.header__logo{
+    height: 140px;
+    width: 100px;
+}
+.header__logo img{
+    height: 100%;
+    width: 100%;
+}
+.header__title h1{
+    color: #ec8e26;
+    font-size: 50px;
+    font-weight: bold;
+}
+.header__sponsor{
+    height: 120px;
+    width: 200px;
+}
+.header__sponsor img{
+    height: 100%;
+    width: 100%;
+}
+.nav{
+
+    margin-top: 15px;
+    display: flex;
+    column-gap: 65px;
+justify-content: center;
+}
+.nav__item a {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 19px;
+    color: white;
+    text-decoration: none;
+}
+.nav__item img{
+    height: 19px;
+
+}
+.news__father{
+    display: flex;
+    justify-content: center;
+}
+.news{
+
+    margin-top: 50px;
+    width: 800px;
+    height: 450px;
+
+}
+.news img{
+    width: 100%;
+    height: 100%;
+}
+.menu{
+    background: url("image/fcab_back_03.png") no-repeat center/cover;
+}
+.nav_btn_mobile{
+    display: none;
+    width: 30px;
+    flex-direction: column;
+    row-gap: 4px;
+
+}
+.nav_btn_mobile div{
+    height: 3px;
+    background: orange;
+    border-radius: 50px;
+}
