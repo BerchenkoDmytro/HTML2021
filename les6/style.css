@@ -15,3 +15,73 @@
     box-sizing: border-box;
     border-radius: 8px;
 }
+.first-screen_left{
+    margin-top: 100px;
+}
+.first-screen_left h1{
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 58px;
+    /* or 67% */
+    letter-spacing: -0.4px;
+    color: #1652AC;
+}
+.first-screen_left .first-screen_text {
+
+    font-size: 17px;
+    line-height: 32px;
+
+    /* or 188% */
+    letter-spacing: -0.4px;
+
+    /* Elsässer Header Paragraph Text */
+    color: #020303;
+    margin-top: 110px;
+    position: relative;
+}
+.first-screen_right{
+    display: flex;
+    justify-content: end;
+}
+.first-screen_left .first-screen_text::before,
+.first-screen_left .first-screen_text::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 227px;
+    height: 7px;
+    background-color: #EDEFF3;
+}
+.first-screen_left .first-screen_text::before{
+    top: -55px;
+}
+.first-screen_left .first-screen_text::after{
+    bottom: -55px;
+}
+.first-screen_text_two {
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 32px;
+
+    /* or 188% */
+
+    /* Elsässer Body Paragraph Text */
+    color: #45494F;
+}
+.first-screen_left h2{
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 40px;
+    letter-spacing: 2.42px;
+    color: #1652AC;
+}
+img{
+    width: 100%;
+}
+
+@media screen and (max-width: 500px) {
+    .first-screen_left h1{
+        font-size: 30px;
+        line-height: 32px;
+    }
+}
