@@ -1,0 +1,113 @@
+@media screen and (max-width: 420px) {
+
+    .header_top {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .header_main {
+        width: 100%;
+    }
+
+
+.header_top_left {
+    margin-left: 15px;
+}
+
+.div_none {
+    display: none;
+}
+
+.div_yes {
+    display: block;
+}
+
+.header_main_top {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.header_main_top_logo {
+    max-width: 150px;
+}
+
+.header_main_top_clock {
+    display: none;
+}
+
+.header_main_top_geo {
+    display: none;
+}
+
+.header_top_right {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.header_main_down {
+    width: 100%;
+
+}
+
+.header_main_down_input input {
+    width: 200px;
+}
+
+.header_main_down_btn {
+    display: none;
+}
+
+.header_main_down_nav {
+    display: none;
+}
+
+.header {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.menu {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.menu_top {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.menu_top_left {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+
+
+}
+
+.menu_top_left img {
+
+    width: 130px;
+    height: 100px;
+
+
+}
+
+.bottom {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+}
