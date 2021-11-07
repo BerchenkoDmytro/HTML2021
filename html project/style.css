@@ -41,13 +41,23 @@ body {
 .header_main {
     background: #FFFFFF;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
-
+display: flex;
+    flex-direction: column;
+    justify-content: center;
+align-items: center;
 }
 
 .header_main_top {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    width: 1363px;
+}
+.header_main_down {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 42px;
+    width: 1363px;
 }
 
 .header_main_top_logo, .header_main_top_clock {
@@ -142,13 +152,7 @@ body {
     margin-top: 10px;
 }
 
-.header_main_down {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 42px;
 
-
-}
 
 .header_main_down_btn button {
     width: 164px;
@@ -591,9 +595,7 @@ body {
     display: flex;
     align-items: center;
     color: #FFFFFF;
-    display: flex;
     justify-content: center;
-    align-items: center;
     column-gap: 10px;
 }
 
@@ -634,7 +636,6 @@ body {
     display: flex;
     align-items: center;
     color: #005BB9;
-    display: flex;
     justify-content: center;
 
 }
