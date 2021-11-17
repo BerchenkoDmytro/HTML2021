@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+<script>
+    // document.write('<ul>');
+    // for (let i = 0; i <105; i++){
+    //     document.write(`<li>item ${i}</li>`);
+    // }
+    // document.write('</ul>');
+
+    // let menu = ['about', 'main', 'contacts', 'team', 'bask'];
+    // document.write('<ul>');
+    // for (let i = 0; i < menu.length; i++) {
+    //     document.write(`<li>${menu[i]}</li>`);
+    // }
+    // document.write('</ul>');
+
+    let products = [
+        {
+            titlle: 'tomato',
+            price: 22,
+            image: 'https://cdn.iconscout.com/icon/premium/png-256-thumb/food-1728333-1469700.png'
+        },
+        {
+            titlle: 'milk',
+            price: 27,
+            image: 'https://cdn.iconscout.com/icon/free/png-256/fast-food-1851561-1569286.png'
+        }, {
+            titlle: 'tea',
+            price: 15,
+            image: 'https://ru.seaicons.com/wp-content/uploads/2016/05/fast-food-icon.png'
+        }, {
+            titlle: 'juice',
+            price: 47,
+            image: 'https://cdn.iconscout.com/icon/premium/png-256-thumb/food-and-beverage-2520087-2113147.png'
+        },
+    ];
+
+    // document.write('<ul>');
+    // for (let i = 0; i < products.length; i++) {
+    //     let product = products[i];
+    //     if (product.price > 20) {
+    //         document.write(`<li>${product.titlle} ${product.price} <img src="${product.image}" alt=""></li>`)
+    //     }
+    // }
+    // document.write(`</li>`);
+
+
+    // document.write('<ul>');
+    // for (let product of products) {
+    //     document.write(`<li>${product.titlle} ${product.price} <img src="${product.image}" alt=""></li>`)
+    // }
+    // document.write(`</li>`);
+
+    // let user = {name: 'vasya', age: 12, status: true};
+    // for (let userKey in user) {
+    //     console.log(userKey, user[userKey]);
+    // }
+    //products.fori + tab
+    // itar + tad
+    //ritar + tab zvorotniy
+
+    // for (let i = 0; i <= 100; i++) {
+    //     console.log('i push up ' + i + ' times');
+    //
+    // }
+
+    let users = [
+        {name: 'vasya', age: 31, status: false},
+        {name: 'petya', age: 30, status: true},
+        {name: 'kolya', age: 29, status: true},
+        {name: 'olya', age: 28, status: false},
+        {name: 'max', age: 30, status: true},
+        {name: 'anya', age: 31, status: false},
+        {name: 'oleg', age: 28, status: false},
+        {name: 'andrey', age: 29, status: true},
+        {name: 'masha', age: 30, status: true},
+        {name: 'olya', age: 31, status: false},
+        {name: 'max', age: 31, status: true}
+    ];
+
+    // for (let user of users) {
+    //     if (user.status === true){
+    //         console.log(user);
+    //     }
+    // }
+
+    // let i = 0;
+    // while (i < users.length) {
+    //     let currentUser = users[i];
+    //     console.log(currentUser);
+    //     i++;
+    // }
+    // filtratsiya
+    // let i = 0;
+    // while (i < users.length) {
+    //     let currentUser = users[i];
+    //     if (currentUser.age >= 30) {
+    //
+    //         console.log(currentUser);
+    //     }
+    //     i++;
+    // }
+    //dvoyna iteratciya
+    //     for (let  user of users){
+    //         console.log('=======');
+    //         for (let userKey in user) {
+    //             console.log(userKey, user[userKey]);
+    //         }
+    //     }
+
+    let arr = [];
+    let x = 0;
+    for (let i = 0; i < 100; i++) {
+        arr[1] = x;
+        x += 2;
+    }
+
+</script>
+</body>
+</html>
