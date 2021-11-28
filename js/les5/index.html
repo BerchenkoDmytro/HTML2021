@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+<script>
+
+
+    // let i = 0;
+    //
+    // function  increment(primiteVar) {
+    //     primiteVar++;
+    // }
+    //
+    // increment(i);
+    // console.log(i);
+    // prumitivni tupu = dublikatu
+
+    // let obj = {i: 0};
+    //
+    // function increment (refObj) {
+    //     refObj.i++;
+    // }
+    //
+    // increment(obj);
+    // console.log(obj);
+    //referens
+
+
+    // let foo = function () {
+    //     console.log('foo foo');
+    // };
+    // foo();
+    //f-ya v zminniy
+
+    // let calc = (a,b) => {
+    //     return a + b;
+    // }
+    //
+    // console.log(calc(10, 23));
+
+    // let calc = (a,b) => a + b;
+    // console.log(calc(10, 20));
+
+    // odnoctrochniy variant
+
+
+    // let calc = (a, b, action) => {
+    //     if (action === '+') {
+    //         return a + b;
+    //     } else {
+    //         return 0;
+    //     }
+    // };
+    // console.log(calc(10, 20, '+'));
+
+
+    // let restFn = (a,b,c, ... arr) => {
+    //     console.log(a, b, c, arr);
+    // }
+    // restFn(1, 2, 3, 54, 32);
+
+    // ... = masyv
+
+    //recursi9
+    // function recur(start) {
+    //     console.log(start);
+    //     start++;
+    //     if (start > 10){
+    //         return;
+    //     }
+    //     recur(start);
+    // }
+    // recur(0);
+
+    // function foobar(fn) {
+    //     console.log(fn);
+    // }
+    //
+    // foobar(()=> {
+    //     console.log('hello');
+    //     console.log('hello');
+    //     console.log('hello');
+    // });
+
+    //callback
+    //     function foobar(fn) {
+    //         fn();
+    //     }
+    //
+    //     foobar(()=> {
+    //         console.log('hello');
+    //         console.log('hello');
+    //         console.log('hello');
+    //     });
+
+
+    // function PC(disc) {
+    //     disc();
+    // }
+    //
+    // PC(() => {
+    //     console.log('brit');
+    //     console.log('rhcp');
+    //     console.log('acdc');
+    // });
+    // PC(() => {
+    //     console.log('lala');
+    //     console.log('bebe');
+    //     console.log('pink');
+    // });
+
+
+    // function calc(a, b, callback) {
+    //     callback(a, b);
+    // }
+    //
+    // calc(10, 20, function (a, b) {
+    //     console.log(a + b - a - 2);
+    // });
+    //
+    // calc(100, 200, (x, y) => {
+    //     console.log(x * y);
+    // });
+    //callback
+
+//callback dlya filtratsiyi
+//     let nums = [11, 222, 3, -11, 0, 100500, -7];
+//
+//     let numbersFilter = nums.filter((n) => {
+//         return n % 2 === 0;
+//     });
+//     console.log(numbersFilter);
+
+//self viklik f-ya
+
+    // (function (msg) {
+    //     console.log(msg);
+    // }('hello'));
+
+
+    //filtratsiya
+
+    let users = [
+        {name: 'oleg', age: 34},
+        {name: 'ol', age: 27},
+        {name: 'oeg', age: 32},
+        {name: 'soleg', age: 36},
+        {name: 'doleg', age: 24},
+        {name: 'voleg', age: 24}
+
+    ];
+
+    // let filter = [];
+    //
+    // for (let user of users) {
+    //     if (user.age > 30){
+    //         filter.push(user);
+    //     }
+    // }
+    // console.log(filter);
+
+//abo
+
+
+    let filter = users.filter(function (user) {
+        return user.age > 30
+    });
+    console.log(filter);
+
+</script>
+
+
+</body>
+</html>
