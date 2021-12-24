@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+<script>
+
+
+    // let user = {};
+    // user.id = 1;
+    // user['name'] = 'vasya';
+    // console.log(user);
+
+
+    // let person = {
+    //     id: 1,
+    //     name: 'vasya',
+    //     wife: {
+    //         name: 'olga'
+    //     }
+    // }
+    // person.wife['id'] = 1;
+    // console.log(person);
+
+
+    // let person = {
+    //     personName: 'vasya',
+    //     surname: 'pupkin',
+    //     getFullname: function () {
+    //         console.log(`${this.personName} ${this.surname}`);
+    //     }
+    // }
+    // person.getFullname();
+
+    // function User(userId, userName) {
+    //     this.id = userId;
+    //     this.name = userName;
+    //     this.greeting = function () {
+    //
+    //         console.log(`hello my name is ${this.name}`);
+    //     };
+    // }
+    //
+    // let user1 = new User(1,'kokonat');
+    // console.log(user1);
+    // user1.greeting();
+    //
+    // let user2 = new User(2,'kokochoko');
+    // console.log(user2);
+    // user2.greeting();
+
+    // function User (id,name,wifeName,wifeSurname){
+    //     this.id = id;
+    //     this.name = name;
+    //     this.wife = {
+    //         name: wifeName, surname: wifeSurname
+    //     }
+    // }
+    //
+    // let user = new User(1, 'vasya', 'olya', 'pupkina-zalupkina');
+    // console.log(user);
+
+
+    // function Husband(name, age,wife) {
+    //     this.name = name;
+    //     this.age = age;
+    //     this.wife = wife;
+    // }
+    // function Wife(name,status){
+    //     this.name = name;
+    //     this.status = status;
+    // }
+    //
+    // let husband = new Husband('vasya', 31, new Wife('olya', true));
+    // console.log(husband);
+
+    class User {
+        constructor(id,name) {
+            this.id = id;
+            this.name = name;
+        }
+        greeting(){
+            console.log(`hello my name is -> ${this.name}`)
+        }
+    }
+
+    class Client extends User{
+        constructor(id,name,status) {
+            super(id,name);
+            this.status = status;
+        }
+    }
+
+    let client = new Client(1,'vasya',true);
+    client.greeting();
+
+    class Customer extends Client{
+        order;
+      }
+
+</script>
+
+
+</body>
+</html>
