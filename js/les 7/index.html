@@ -80,29 +80,92 @@
     // let husband = new Husband('vasya', 31, new Wife('olya', true));
     // console.log(husband);
 
-    class User {
-        constructor(id,name) {
-            this.id = id;
-            this.name = name;
-        }
-        greeting(){
-            console.log(`hello my name is -> ${this.name}`)
-        }
+    // class User {
+    //     constructor(id,name) {
+    //         this.id = id;
+    //         this.name = name;
+    //     }
+    //     greeting(){
+    //         console.log(`hello my name is -> ${this.name}`)
+    //     }
+    // }
+    //
+    // class Client extends User{
+    //     constructor(id, name, status) {
+    //         super(id, name);
+    //         this.status = status;
+    //     }
+    //
+    //
+    // }
+    //
+    // let client = new Client(1,'vasya',true);
+    // client.greeting();
+    //
+    // class Customer extends Client{
+    //     order;
+    //   }
+
+
+    // function foobar(name) {
+    //     let user = {name: name};
+    //     let userWorker = {
+    //         getName: function () {
+    //             console.log(user.name);
+    //         }
+    //     }
+    //     return userWorker;
+    //
+    // }
+    //
+    // let foobar_f = foobar('kokos');
+    //
+    // foobar_f.getName();
+
+
+    //
+    // function foobar1(){
+    //     let x = 100;
+    //     let userWorker = {
+    //         xxx: function () {
+    //             console.log(x);
+    //         }
+    //     };
+    //     return userWorker;
+    //
+    // }
+    //
+    // let uw = foobar1();
+    // uw.xxx();
+
+
+    function foobar(){
+        let user = {age : 31};
+        let userWorker = {
+            getAge: function (password) {
+                if (password === 'asdqwe'){
+                    return user.age;
+                } else{
+                    console.log('wrong password');
+                    return -9999;
+                }
+
+            },
+            setAge: function (newAge){
+                if (newAge > 0 && newAge < 215){
+                    user.age = newAge;
+                }
+            }
+        };
+        return userWorker;
+
     }
 
-    class Client extends User{
-        constructor(id,name,status) {
-            super(id,name);
-            this.status = status;
-        }
-    }
-
-    let client = new Client(1,'vasya',true);
-    client.greeting();
-
-    class Customer extends Client{
-        order;
-      }
+    let uw = foobar();
+    let age = uw.getAge('asdqw');
+    console.log(age);
+    uw.setAge(90);
+    console.log(uw.getAge('asdqwe'));
 
 </script>
 
