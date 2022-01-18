@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p class="descrtipon">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, nihil!</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci at autem distinctio esse excepturi fuga laboriosam libero, sequi! Cum, eos!</p>
+<p class="descrtipon">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias commodi deleniti dignissimos ducimus id itaque magni molestiae natus necessitatibus obcaecati officia pariatur quis rem, sunt voluptatibus. Laudantium minus tempore velit?</p>
+
+<div class="d1 box">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, necessitatibus!</p>
+<!--   hello motherfucker-->
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, necessitatibus!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, necessitatibus!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, necessitatibus!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, necessitatibus!</p>
+</div>
+
+
+
+
+<script>
+
+
+    // by tag
+    // let pList = document.getElementsByTagName('p');
+    // console.log(pList);
+    // pList[0].innerText = 'ewqefgdnhmvm ncbvcsd';
+    // for (const pListElement of pList) {
+    //     console.log(pListElement);
+    //
+    // }
+
+// by class
+
+    let pWithClassDescription = document.getElementsByClassName('descrtipon');
+
+    console.log(pWithClassDescription);
+    // for (const p of pWithClassDescription) {
+    //   if (p.innerText.includes('velit')){
+    //       p.style.background = 'silver';
+    //   }
+    // }
+
+    //classlist
+
+    // class list add
+    // for (const p of pWithClassDescription) {
+    //     if (p.innerText.includes('velit')){
+    //         console.log(p.classList);
+    //         p.classList.add('newclass');
+    //     }
+    // }
+
+    //class list toggle
+    // let p1 = pWithClassDescription[0];
+    // console.log(p1);
+    // p1.classList.toggle('asd');
+
+
+    // search in current element
+    let d1List = document.getElementsByClassName('d1');
+    let d1 = d1List[0];
+    let pD1List = d1.getElementsByTagName('p');
+    console.log(pD1List);
+
+    //children
+    console.log(d1.children);
+
+    //child node
+
+    console.log(d1.childNodes);
+    for (const node of d1.childNodes) {
+        console.log(node);
+    }
+
+</script>
+
+
+</body>
+</html>
