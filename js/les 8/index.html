@@ -6,18 +6,30 @@
 </head>
 <body>
 <p class="descrtipon">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, nihil!</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci at autem distinctio esse excepturi fuga laboriosam libero, sequi! Cum, eos!</p>
-<p class="descrtipon">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias commodi deleniti dignissimos ducimus id itaque magni molestiae natus necessitatibus obcaecati officia pariatur quis rem, sunt voluptatibus. Laudantium minus tempore velit?</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci at autem distinctio esse excepturi fuga laboriosam
+    libero, sequi! Cum, eos!</p>
+<p class="descrtipon">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias commodi deleniti dignissimos
+    ducimus id itaque magni molestiae natus necessitatibus obcaecati officia pariatur quis rem, sunt voluptatibus.
+    Laudantium minus tempore velit?</p>
 
 <div class="d1 box">
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, necessitatibus!</p>
-<!--   hello motherfucker-->
+    <!--   hello motherfucker-->
 
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, necessitatibus!</p>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, necessitatibus!</p>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, necessitatibus!</p>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, necessitatibus!</p>
 </div>
+    <form action="" name="forma1" class="targetform1">
+        <input type="text" name="username">
+        <button>save</button>
+    </form>
+    <form action="" id="forma2">
+        <input type="text" name="search">
+        <button>search</button>
+    </form>
+
 
 
 
@@ -34,7 +46,7 @@
     //
     // }
 
-// by class
+    // by class
 
     let pWithClassDescription = document.getElementsByClassName('descrtipon');
 
@@ -77,6 +89,21 @@
         console.log(node);
     }
 
+
+    // froms API
+    console.log(document.forms);
+
+
+    function reCall(startElement) {
+        console.log(startElement);
+        if (startElement.children.length) {
+            for (const Element of startElement.children) {
+                reCall(Element);
+            }
+        }
+    }
+
+  reCall(document.body);
 </script>
 
 
