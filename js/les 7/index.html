@@ -139,20 +139,20 @@
     // uw.xxx();
 
 
-    function foobar(){
-        let user = {age : 31};
+    function foobar() {
+        let user = {age: 31};
         let userWorker = {
             getAge: function (password) {
-                if (password === 'asdqwe'){
+                if (password === 'asdqwe') {
                     return user.age;
-                } else{
+                } else {
                     console.log('wrong password');
                     return -9999;
                 }
 
             },
-            setAge: function (newAge){
-                if (newAge > 0 && newAge < 215){
+            setAge: function (newAge) {
+                if (newAge > 0 && newAge < 215) {
                     user.age = newAge;
                 }
             }
@@ -166,6 +166,26 @@
     console.log(age);
     uw.setAge(90);
     console.log(uw.getAge('asdqwe'));
+
+
+    function generatePrivateUser(name, age) {
+        let user = {name: name, age: age};
+        return{
+            getName: ()=> user.name,
+            getAge: ()=> user.age,
+            setAge: (age) => {
+                if (age > 0){
+                    user.age = age;
+                }
+            }
+        }
+    }
+
+    let userWrap = generatePrivateUser('kokos', 31);
+    console.log(userWrap.getName());
+    console.log(userWrap.getAge());
+    userWrap.setAge(38);
+    console.log(userWrap.getAge());
 
 </script>
 
