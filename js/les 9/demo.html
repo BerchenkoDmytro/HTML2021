@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+<script>
+
+
+    let products = [
+        {
+            titlle: 'tomato',
+            price: 22,
+            image: 'https://cdn.iconscout.com/icon/premium/png-256-thumb/food-1728333-1469700.png'
+        },
+        {
+            titlle: 'milk',
+            price: 27,
+            image: 'https://cdn.iconscout.com/icon/free/png-256/fast-food-1851561-1569286.png'
+        },
+        {
+            titlle: 'tea',
+            price: 15,
+            image: 'https://ru.seaicons.com/wp-content/uploads/2016/05/fast-food-icon.png'
+        },
+        {
+            titlle: 'juice',
+            price: 47,
+            image: 'https://cdn.iconscout.com/icon/premium/png-256-thumb/food-and-beverage-2520087-2113147.png'
+        },
+    ];
+
+    let idCounter = 1;
+
+    for (const product of products) {
+        let divElement = document.createElement('div');
+        divElement.innerText = product.titlle + ' ' + product.price;
+        divElement.setAttribute('id', 'id-' + idCounter);
+        idCounter++;
+        document.body.appendChild(divElement);
+    }
+</script>
+
+
+</body>
+</html>
