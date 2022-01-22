@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        /*.target{*/
+        /*    width: 200px;*/
+        /*    height: 200px;*/
+        /*    background: black;*/
+        /*}*/
+
+    </style>
+
+</head>
+<body>
+<!--<button id="btn1">click me</button>-->
+
+<!--<div class="target"></div>-->
+
+<form action="/someaction" id="f1">
+    <input type="text" name="username">
+    <input type="number" name="age">
+    <input type="checkbox" name="status">
+    <button>save</button>
+
+</form>
+
+<script>
+
+
+    // let btn1 = document.getElementById('btn1');
+    //
+    // // btn1.onclick = function () {
+    // //     console.log('click me!');
+    // // };
+    // // console.log(btn1);
+    //
+    //
+    // btn1.addEventListener('click', function () {
+    //     console.log('click 1');
+    // });
+    // btn1.addEventListener('click', function (){
+    //     console.log('click 2');
+    // })
+
+    // mouse events
+
+    // let targe = document.getElementsByClassName('target')[0];
+    // targe.ondblclick = function () {
+    //     console.log('dbl click');
+    // };
+    // targe.onmousedown = function () {
+    //     console.log('onmousedown');
+    // };
+    // targe.onmouseup = function () {
+    //     console.log('onmouseup');
+    // };
+    // targe.onmouseover = function () {
+    //     console.log('onmouseover');
+    // };
+    // targe.onmouseleave = function () {
+    //     console.log('onmouseleave');
+    // };
+    // targe.onmousemove = function (e) {
+    //     // this.style.background = `rgb(${Math.round(Math.random() * 255)},${Math.round(Math.random() * 255)},${Math.round(Math.random() * 255)})`;
+    //     this.style.background = `rgb(${e.clientX},${e.clientY},${e.clientX})`;
+    //
+    // };
+
+    //keyboard events
+
+    // document.onkeypress = function (e) {
+    //     console.log(e.key);
+    // };
+
+    //forms events
+
+    let f1 = document.forms.f1;
+    f1.onsubmit = function (e) {
+        e.preventDefault();
+        let name = this.username.value;
+        let age = this.age.value;
+        let status = this.status.checked;
+        console.log({name: name, age: age, status: status});
+
+    };
+
+    // f1.username.oninput = function () {
+    //     console.log(this.value);
+    // };
+
+    f1.status.onclick = function () {
+        console.log(this.checked);
+    };
+    console.log()
+</script>
+
+
+</body>
+</html>
