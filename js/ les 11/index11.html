@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+<video src="" id="videoplayer"></video>
+<script>
+//////////////////////  BOM
+//history,location,stream
+
+
+// console.log(window.location);
+// location.reload();
+// history.back();
+// history.forward();
+// history.pushState('someState', 'some title', 'arsenal.com');
+// location.href = 'https://owu.com.ua';
+// console.log(navigator.hardwareConcurrency);
+
+// navigator.mediaDevices.getUserMedia({video: true})
+//     .then(stream => {
+//         let videoplayer = document.getElementById('videoplayer');
+//         videoplayer.srcObject = stream;
+//         videoplayer.play();
+//     });
+
+///////////session storage
+//JSON
+
+// sessionStorage.setItem('ytPlayer', 'volume');
+// console.log(sessionStorage.getItem('ytPlayer'));
+//
+//
+// console.log(location.href);
+// let url = new URL(location.href);
+// console.log(url);
+// // console.log(url.search);
+// let searchDirty = url.search;
+// let utm = {
+//     param: searchDirty
+// }
+//
+// let stringify = JSON.stringify(utm);
+// sessionStorage.setItem('ytPlayer', stringify);
+// let item = sessionStorage.getItem('ytPlayer');
+// console.log(item);
+// console.log(JSON.parse(item));
+
+
+/////// locale storage
+
+localStorage.setItem('k1', 'v1');
+localStorage.setItem('k2', 'v2');
+localStorage.setItem('k3', 'v3');
+localStorage.setItem('k4', 'v4');
+// localStorage.clear();
+
+
+
+//////cookie
+//maxage,path,geolocation
+
+// if (navigator.cookieEnabled){
+//     alert('!!!');
+// }
+
+
+document.cookie = 'user_id=177;max-age=2345356;path=/';
+document.cookie = 'user_age=27;max-age=1345356;path=/';
+
+navigator.geolocation.getCurrentPosition(position => {
+    console.log(position.coords.latitude);
+    console.log(position.coords.longitude);
+
+})
+
+</script>
+
+
+</body>
+</html>
