@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+<!--<form name="f1">-->
+<!--    <input type="text" name="name">-->
+<!--    <input type="number" name="age">-->
+<!--    <button>save</button>-->
+<!--</form>-->
+
+
+<!--<input type="text" name="name">-->
+<!--<input type="number" name="age">-->
+<!--<button>save</button>-->
+
+
+<form name="carForm">
+    <input type="text" name="model">
+    <input type="text" name="type">
+    <input type="number" name="volume">
+    <button>save car to array</button>
+</form>
+
+<script>
+
+
+    // -створити форму з інпутами для name та age.
+    //     При відправці форми записати об'єкт в localstorage
+
+
+    // let f1 = document.forms.f1;
+    // f1.onsubmit = function (e) {
+    //     e.preventDefault();
+    //     let name = this.name.value;
+    //     let age = this.age.value;
+    //     console.log(name,age);
+    //     localStorage.setItem('userData', JSON.stringify({name: name, age: age}));
+    //
+    // };
+
+    // let inputs = document.getElementsByTagName('input');
+    // let name = inputs[0];
+    // let age = inputs[1];
+    // let btn = document.getElementsByTagName('button')[0];
+    // btn.onclick = function () {
+    //     let nameValue = name.value;
+    //     let ageValue = age.value;
+    //     localStorage.setItem('userData2', JSON.stringify({name: nameValue, age: ageValue}))
+    //
+    // };
+
+    // -створити форму з інпутами для model,type та volume автівки.
+    //     при відпарвці форми об'єкти зберігаються в масиві в локальному сховищі.
+
+    let carForm = document.forms.carForm;
+
+    // carForm.onsubmit = function (e) {
+    //     e.preventDefault();
+    //     let modelValue = this.model.value;
+    //     let typeValue = this.type.value;
+    //     let volumeValue = this.volume.value;
+    //     let car = {model: modelValue, type: typeValue, volume: volumeValue}
+    //     let cars = JSON.parse(localStorage.getItem('cars'));
+    //     console.log(cars);
+    //     if (!cars) {
+    //         cars = [];
+    //         cars.push(car);
+    //         localStorage.setItem('cars', JSON.stringify(cars));
+    //     } else {
+    //         cars.push(car);
+    //         localStorage.setItem('cars', JSON.stringify(cars));
+    //     }
+    //
+    // };
+
+    carForm.onsubmit = function (e) {
+        e.preventDefault();
+        let modelValue = this.model.value;
+        let typeValue = this.type.value;
+        let volumeValue = this.volume.value;
+        let car = {model: modelValue, type: typeValue, volume: volumeValue}
+        let cars = JSON.parse(localStorage.getItem('cars')) || [];
+        console.log(cars);
+        cars.push(car);
+        localStorage.setItem('cars', JSON.stringify(cars));
+    }
+
+</script>
+
+
+</body>
+</html>
