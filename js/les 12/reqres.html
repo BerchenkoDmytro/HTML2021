@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+<select id="page">
+    <option value="1">page 1</option>
+    <option value="2">page 2</option>
+
+</select>
+<div class="wrap"></div>
+<script>
+    let select = document.getElementById('page');
+    let wrap = document.getElementsByClassName('wrap')[0];
+    select.onchange = function () {
+        let pageNumber = this.value;
+        fetch(`https://reqres.in/api/users?page=${pageNumber}`)
+            .then(value => value.json())
+            .then(value => {
+                wrap.innerHTML = '';
+                let users = value.data;
+                console.log(users);
+                for (const user of users) {
+                    let div = document.createElement('div');
+
+                    let title = document.createElement('h2');
+                    title.innerText = `${user.first_name} ${user.last_name}`;
+
+                    let img = document.createElement('img');
+                    img.src = user.avatar;
+                    div.append(title);
+                    div.appendChild(img);
+                    wrap.append(div);
+                }
+            });
+    }
+
+
+    // fetch('https://reqres.in/api/users')
+    //     .then(value => value.json())
+    //     .then(value => {
+    //
+    //         let users = value.data;
+    //         console.log(users);
+    //         for (const user of users) {
+    //             let div = document.createElement('div');
+    //
+    //             let title = document.createElement('h2');
+    //             title.innerText = `${user.first_name} ${user.last_name}`;
+    //
+    //             let img = document.createElement('img');
+    //             img.src = user.avatar;
+    //             div.append(title);
+    //             div.appendChild(img);
+    //             document.body.append(div);
+    //         }
+    //     });
+</script>
+
+
+</body>
+</html>
