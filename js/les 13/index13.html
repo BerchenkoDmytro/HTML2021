@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+<script>
+
+    //try catch es6 rest date call apply bind proto regexp
+
+
+    //try catch
+
+    // console.log('start');
+    // try{
+    //     console.log(a);
+    // } catch (error){
+    //     console.log(error);
+    // }
+    // console.log('end');
+
+
+    //date
+
+    // let date = new Date();
+    // console.log(date);
+    // console.log(date.getTime(),'time');
+    // console.log(date.getFullYear(),'year');
+    // console.log(date.getMonth(),'month');
+    // console.log(date.getDay(),'day of week');
+    // console.log(date.getDate(),'date');
+    // console.log(date.getHours(),'hours');
+    // console.log(date.getMinutes(),'min');
+    // console.log(date.getSeconds(),'sec');
+
+    //es6
+
+    // let user = {name: 'kokos', age: 123, status: true, skills: []};
+    //
+    // function log({name,age}){
+    //     console.log(name, age);
+    // }
+    //
+    // log(user);
+    // log({name: 'kokos', age: 123});
+
+    //copy es6
+
+    // let user = {name: 'kokos', age: 123, status: true, skills: []};
+
+    // let s = JSON.stringify(user);
+    // let copyUser = JSON.parse(s);
+    // console.log(user === copyUser);
+    // console.log(user);
+    // console.log(copyUser);
+
+    // let copyUser2 = {...user, skills:[...user.skills]};
+    // console.log(user);
+    // console.log(copyUser2);
+    // console.log(user === copyUser2);
+    // console.log(user.skills === copyUser2.skills);
+
+    //spred
+    // let skills = ['asd', 'qwe'];
+    // let name = 'vasya';
+    // let age = 31;
+    // let wife = {name: 'anna', age: 29};
+    // let user = {skills: [...skills],name,age, wife}
+    //
+    // console.log(user);
+    // user.skills.push('js');
+    // console.log(skills);
+    // console.log(user.skills);
+
+
+    // let {name, age, greeting} = {
+    //     name: 'kokos', age: 123, status: true, greeting: function () {
+    //         console.log('hi');
+    //     }
+    // };
+    // console.log(name, age);
+    // greeting();
+
+    // call apply bind
+
+    // let u1 = {
+    //     name: 'vasya',
+    //     greeting: function (msg,a,b){
+    //         console.log(`${msg} my name is ${this.name}`);
+    //     }
+    // }
+
+    // let u2 = {name: 'anton'};
+    // u1.greeting.call(u2, 'hello','sexy','baby');
+    // u1.greeting.apply(u2, ['hello', 'sexy', 'baby']);
+    // let greetingCopy = u1.greeting.bind(u2,'ola');
+    // greetingCopy();
+
+
+    // function User(name) {
+    //     this.name = name;
+    // }
+    //
+    // function SuperUser(name,age){
+    //     User.apply(this, arguments);
+    //     // User.call(this, ...arguments);
+    //     this.age = age;
+    // }
+
+    //proto
+
+    // Array.prototype.myCustomFilter = function (callback) {
+    //     let localArray = [];
+    //     for (const item of this) {
+    //         if (callback(item)) {
+    //             localArray.push(item);
+    //         }
+    //     }
+    //     return localArray;
+    // };
+    // let users = [{name: 'vasya', status: true},{name: 'vasya', status: false},{name: 'asya', status: true}]
+    // let customFilter = users.myCustomFilter(value => value.status);
+    // console.log(customFilter);
+
+
+    //regexp
+
+    let phone = '067-123-12-21';
+    let s = phone.replaceAll(/[\s\-\(\)]/g, '');
+    console.log(s);
+
+    let email = 'bera@asd.com dsaoidjas ndnasl';
+    let res = email.match(/[a-z]{1,9}@asd.com/);
+    console.log(res);
+</script>
+
+
+</body>
+</html>
