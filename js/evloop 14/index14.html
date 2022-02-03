@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+
+<script>
+//     let money = 100;
+//
+//     function goWork(isJobDone) {
+//         return new Promise((resolve, reject) => {
+//             setTimeout(() => {
+//                 if (isJobDone) {
+//                     money += 400;
+//                     console.log('Job Done');
+//                     resolve(money)
+//                 } else {
+//                     console.log('no money np honey')
+//                     reject('ooops')
+//                 }
+//             }, 1000)
+//         })
+//     }
+//
+//
+//
+//     function flyToEgypt(dollars){
+// return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//         console.log(dollars, '$');
+//         if (dollars > 400){
+//             console.log('hoooray');
+//             resolve('drink beer');
+//         }else {
+//             console.log('berdichiv');
+//             reject('mdeee')
+//         }
+//     },1000)
+// })
+//     }
+//
+//     goWork(true)
+//         .then(payment => {
+//             return flyToEgypt(payment)
+//         }).then(result => {
+//         console.log(result);
+//     });
+
+
+
+    // let money = 100;
+    //
+    // function goWork(isJobDone) {
+    //     return new Promise((resolve, reject) => {
+    //         setTimeout(() => {
+    //             if (isJobDone) {
+    //                 money += 400;
+    //                 console.log('Job Done');
+    //                 resolve(money)
+    //             } else {
+    //                 console.log('no money np honey')
+    //                 reject('ooops')
+    //             }
+    //         }, 1000)
+    //     })
+    // }
+    //
+    // function flyToEgypt(dollars){
+    //     return new Promise((resolve, reject) => {
+    //         setTimeout(() => {
+    //             console.log(dollars, '$');
+    //             if (dollars > 400){
+    //                 console.log('hoooray');
+    //                 resolve('drink beer');
+    //             }else {
+    //                 console.log('berdichiv');
+    //                 reject('mdeee')
+    //             }
+    //         },1000)
+    //     })
+    // }
+    //
+    // async function holiday(){
+    //     const payment = await goWork(true);
+    //     const result = await flyToEgypt(payment);
+    //
+    //     console.log(payment, 'payment');
+    //     console.log(result, 'result');
+    // }
+// holiday();
+
+
+// const  p1 = new Promise((resolve, reject) => {
+//     resolve(1)
+// })
+//
+// const p2 = new Promise((resolve, reject) => {
+//     resolve(2)
+// })
+//
+// Promise.all([p2, p1]).then( res =>{
+//     console.log(res);
+// })
+
+
+let users = [
+    {name: 'ddsaima', age: 10},
+    {name: 'diwdma', age: 7},
+    {name: 'dimasa', age: 77},
+    {name: 'dimas', age: 45},
+    {name: 'dimsa', age: 10},
+    {name: 'dimad', age: 10},
+    {name: 'dimda', age: 19},
+    {name: 'disma', age: 18}
+];
+
+console.time('reduse');
+
+let usersWithCar = users.reduce((acc, user) => {
+    if (user.age >= 18) {
+        user.car = true;
+        acc.push(user);
+    }
+    return acc;
+}, []);
+console.log(usersWithCar);
+
+console.timeEnd('reduse');
+</script>
+
+
+</body>
+</html>
